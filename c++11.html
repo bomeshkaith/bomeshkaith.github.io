@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>C++ Program</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+<style>
+.input{
+  padding:0px;
+ 
+}
+h3{
+  padding:0px;
+}
+ .button{
+  text-align: center;
+}
+</style>
+</head>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+<body>
+<div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+    <a href ="C++Quiz.html">C++ Quiz</a>
+    <a href ="javaQuiz.html">java Quiz</a>
+</div>
+
+<h2>C++ Functions</h2><hr></hr>
+<p>
+A function is a block of code which only runs when it is called.
+<br></br>
+You can pass data, known as parameters, into a function.
+<br></br>
+Functions are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times.
+<br></br>
+Create a Function <br></br>
+C++ provides some pre-defined functions, such as main(), which is used to execute code. But you can also create your own functions to perform certain actions.
+<br></br>
+To create (often referred to as declare) a function, specify the name of the function, followed by parentheses ():
+<br></br>
+Syntax<br></br>
+void myFunction() { <br></br>
+  // code to be executed <br></br>
+}<br></br>
+Example Explained <br></br>
+myFunction() is the name of the function <br></br>
+void means that the function does not have a return value. You will learn more about return values later in the next chapter
+inside the function (the body), add code that defines what the function should do
+Call a Function <br></br>
+Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are called.
+<br></br>
+To call a function, write the function's name followed by two parentheses () and a semicolon ;
+<br></br>
+In the following example, myFunction() is used to print a text (the action), when it is called:
+<br></br>
+Example<br></br>
+Inside main, call myFunction():<br></br>
+
+// Create a function <br></br>
+void myFunction() { <br></br>
+  cout << "I just got executed!";  <br></br>
+} <br></br>
+
+int main()  {<br></br>
+   myFunction(); // call the function <br></br>
+   return 0; <br></br>
+}<br></br>
+
+// Outputs "I just got executed!" <br></br>
+A function can be called multiple times: <br></br>
+
+Example <br></br>
+void myFunction() { <br></br>
+  cout << "I just got executed!\n";  <br></br>
+}<br></br>
+
+int main() { <br></br>
+  myFunction(); <br></br>
+  myFunction(); <br></br>
+  myFunction(); <br></br>
+  return 0; <br></br>
+} <br></br>
+
+// I just got executed!   <br></br>
+// I just got executed!<br></br>
+// I just got executed!<br></br>
+
+Function Declaration and Definition<br></br>
+A C++ function consist of two parts:<br></br>
+
+Declaration: the return type, the name of the function, and parameters (if any)<br></br>
+Definition: the body of the function (code to be executed)<br></br>
+void myFunction() { // declaration<br></br>
+  // the body of the function (definition)<br></br>
+}<br></br>
+Note: If a user-defined function, such as myFunction() is declared after the main() function, an error will occur:
+<br></br>
+Example<br></br>
+int main() {<br></br>
+  myFunction();<br></br>
+  return 0;<br></br>
+}<br></br>
+
+void myFunction() {  <br></br>
+  cout << "I just got executed!";<br></br>
+}<br></br>
+
+// Error<br></br>
+However, it is possible to separate the declaration and the definition of the function - for code optimization.
+<br></br>
+You will often see C++ programs that have function declaration above main(), and function definition below main(). This will make the code better organized and easier to read:
+<br></br>
+</p>
+<h2>C++ Function Parameters</h2><hr></hr>
+<h2>Parameters and Arguments</h2><hr></hr>
+<p>
+Information can be passed to functions as a parameter. Parameters act as variables inside the function.
+<br></br>
+Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma:
+<br></br>
+Syntax   <br></br>
+void functionName(parameter1, parameter2, parameter3) {   <br></br>
+  // code to be executed   <br></br>
+}<br></br>
+The following example has a function that takes a string called fname as parameter. When the function is called, we pass along a first name, which is used inside the function to print the full name:
+<br></br>
+Example<br></br>
+void myFunction(string fname) {    <br></br>
+  cout << fname << " Refsnes\n"; <br></br>
+}<br></br>
+
+int main() {    <br></br>
+  myFunction("Liam"); <br></br>
+  myFunction("Jenny");  <br></br>
+  myFunction("Anja");    <br></br>
+  return 0;   <br></br>
+}   <br></br>
+
+// Liam Refsnes     <br></br>
+// Jenny Refsnes   <br></br>
+// Anja Refsnes<br></br>
+When a parameter is passed to the function, it is called an argument. So, from the example above: fname is a parameter, while Liam, Jenny and Anja are arguments.
+<br></br>
+</p>
+<div class="button">
+<a href="c++10.html" class="previous">&laquo; Previous </a>
+</div>
+</body>
+</html>

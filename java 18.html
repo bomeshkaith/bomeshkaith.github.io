@@ -1,0 +1,170 @@
+<html>
+<head>
+<title> java method parameters
+</title>
+<link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+ <div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+   <a href ="C++Quiz.html">C++ Quiz</a>
+   <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h1>
+Parameters and Arguments
+</h1>
+<p>Information can be passed to methods as parameter. Parameters act as variables inside the method.<br>
+
+Parameters are specified after the method name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.<br>
+
+The following example has a method that takes a String called fname as parameter. When the method is called, we pass along a first name, which is used inside the method to print the full name:
+</p>
+<h3>
+Example</h3>
+
+public class Main {<br>
+  static void myMethod(String fname) {<br>
+    System.out.println(fname + " Refsnes");<br>
+  }<br>
+
+  public static void main(String[] args) {<br>
+    myMethod("Liam");<br>
+    myMethod("Jenny");<br>
+    myMethod("Anja");<br>
+  }<br>
+}<br>
+// Liam Refsnes<br>
+// Jenny Refsnes<br>
+// Anja Refsnes<br>
+ 
+ 
+<p>When a parameter is passed to the method, it is called an argument. So, from the example above: fname is a parameter, while Liam, Jenny and Anja are arguments.
+</p>
+<h1>
+Multiple Parameters</h1>
+<p>
+You can have as many parameters as you like:
+
+</p>
+<h3>Example</h3>
+public class Main {<br>
+  static void myMethod(String fname, int age) {<br>
+    System.out.println(fname + " is " + age);<br>
+  }<br>
+
+  public static void main(String[] args) {<br>
+    myMethod("Liam", 5);<br>
+    myMethod("Jenny", 8);<br>
+    myMethod("Anja", 31);<br>
+  }<br>
+}
+
+// Liam is 5
+// Jenny is 8
+// Anja is 31 
+
+<h3>Note that when you are working with multiple parameters, the method call must have the same number of arguments as there are parameters, and the arguments must be passed in the same order.
+</h3>
+<h1>
+Return Values</h1>
+<p>The void keyword, used in the examples above, indicates that the method should not return a value.<br> 
+If you want the method to return a value, you can use a primitive data type (such as int, char, etc.) instead of void, and use the return keyword inside the method:<br>
+</p>
+<h3>Example</h3>
+public class Main {<br>
+  static int myMethod(int x) {<br>
+    return 5 + x;<br>
+  }<br>
+
+  public static void main(String[] args) {<br>
+    System.out.println(myMethod(3));<br>
+  }<br>
+}<br>
+// Outputs 8 (5 + 3)<br>
+ <p>
+This example returns the sum of a method's two parameters:
+</p>
+<h3>
+Example</h3>
+public class Main {<br>
+  static int myMethod(int x, int y) {<br>
+    return x + y;<br>
+  }<br>
+
+  public static void main(String[] args) {<br>
+    System.out.println(myMethod(5, 3));<br>
+  }<br>
+}<br>
+// Outputs 8 (5 + 3)<br>
+
+<p>You can also store the result in a variable (recommended, as it is easier to read and maintain):
+</p>
+<h3>
+Example</h3>
+public class Main {<br>
+  static int myMethod(int x, int y) {<br>
+    return x + y;<br>
+  }<br>
+
+  public static void main(String[] args) {<br>
+    int z = myMethod(5, 3);<br>
+    System.out.println(z);<br>
+  }<br>
+}<br>
+// Outputs 8 (5 + 3)
+
+<h1>
+A Method with If...Else
+</h1>
+<p>It is common to use if...else statements inside methods:
+</p>
+<h3>
+Example</h3>
+public class Main {<br>
+
+  // Create a checkAge() method with an integer variable called age<br>
+  static void checkAge(int age) {<br>
+
+    // If age is less than 18, print "access denied"<br>
+    if (age < 18) {<BR>
+      System.out.println("Access denied - You are not old enough!");<br>
+
+    // If age is greater than, or equal to, 18, print "access granted"<br>
+    } else {<br>
+      System.out.println("Access granted - You are old enough!");<br>
+    }<br>
+
+  }<br>
+
+  public static void main(String[] args) {<br>
+{
+    checkAge(20); // Call the checkAge method and pass along an age of 20<br>
+  }<br>
+}<br>
+
+// Outputs "Access granted - You are old enough!"
+<div class = "button">
+<a href="java 17.html" class="previous">&laquo; Previous</a>
+<a href="java 19.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

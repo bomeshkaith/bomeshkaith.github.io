@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>
+java abstraction</title>
+<link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+     <a href ="C++Quiz.html">C++ Quiz</a>
+     <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h1>
+Abstract Classes and Methods
+</h1>
+<p>Data abstraction is the process of hiding certain details and showing only essential information to the user.
+<br>Abstraction can be achieved with either abstract classes or interfaces (which you will learn more about in the next chapter).
+<br>
+The abstract keyword is a non-access modifier, used for classes and methods:
+<br>
+Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+<br>
+Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
+<br>
+<h3>An abstract class can have both abstract and regular methods:
+</p>
+abstract class Animal {<br>
+  public abstract void animalSound();<br>
+  public void sleep() {<br>
+    System.out.println("Zzz");<br>
+  }<br>
+}<br>
+ <h3>
+ From the example above, it is not possible to create an object of the Animal class:
+</h3>
+<p>
+Animal myObj = new Animal(); // will generate an error<br>
+To access the abstract class, it must be inherited from another class. Let's convert the Animal class we used in the Polymorphism chapter to an abstract class:<br>
+
+<h3>Remember from the Inheritance chapter that we use the extends keyword to inherit from a class.
+<br>
+Example</h3>
+// Abstract class<br>
+abstract class Animal {<br>
+  // Abstract method (does not have a body)<br>
+  public abstract void animalSound();<br>
+  // Regular method<br>
+  public void sleep() {<br>
+    System.out.println("Zzz");<br>
+  }<br>
+}<br>
+
+// Subclass (inherit from Animal)<br>
+class Pig extends Animal {<br>
+  public void animalSound() {<br>
+    // The body of animalSound() is provided here<br>
+    System.out.println("The pig says: wee wee");<br>
+  }<br>
+}<br>
+class Main {<br>
+  public static void main(String[] args) {<br>
+    Pig myPig = new Pig(); // Create a Pig object<br>
+    myPig.animalSound();<br>
+    myPig.sleep();<br>
+  }<br>
+}<br>
+ 
+ <h3>Why And When To Use Abstract Classes and Methods?</h3>
+<p>
+To achieve security - hide certain details and only show the important details of an object.
+<br>
+<h3>Note: Abstraction can also be achieved with Interfaces, which you will learn more about in the next chapter.</h3>
+<div class = "button">
+<a href="java 29.html" class="previous">&laquo; Previous</a>
+</div>
+</body>
+</html>

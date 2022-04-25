@@ -1,0 +1,102 @@
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets.css">
+<title> java method </title>
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+   <a href ="C++Quiz.html">C++ Quiz</a>
+   <a href ="javaQuiz.html">java Quiz</a>
+</div>
+
+<h3> java method</h3>
+<p>
+
+A method is a block of code which only runs when it is called.
+
+You can pass data, known as parameters, into a method.
+
+Methods are used to perform certain actions, and they are also known as functions.
+
+Why use methods? To reuse code: define the code once, and use it many times.</p>
+<h3>
+
+Create a Method
+<h3>
+<p>A method must be declared within a class. It is defined with the name of the method, followed by parentheses (). Java provides some pre-defined methods, such as System.out.println(), but you can also create your own methods to perform certain actions:
+</p>
+<h3>
+Example
+</h3>
+Create a method inside Main:
+
+public class Main {<br>
+  static void myMethod() {<br>
+    // code to be executed<br>
+  }<br>
+}<br>
+ <h3>
+Example Explained</h3>
+<p>
+myMethod() is the name of the method
+static means that the method belongs to the Main class and not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.
+void means that this method does not have a return value. You will learn more about return values later in this chapter
+Call a Method
+To call a method in Java, write the method's name followed by two parentheses () and a semicolon;
+
+In the following example, myMethod() is used to print a text (the action), when it is called:
+</p><h3>
+Example</h3>
+<p>
+Inside main, call the myMethod() method:<br>
+
+public class Main {<br>
+  static void myMethod() {<br>
+    System.out.println("I just got executed!");<br>
+  }<br>
+
+  public static void main(String[] args) {<br>
+    myMethod();<br>
+  }<br>
+}<br>
+
+// Outputs "I just got executed!"
+<br><h3> 
+
+A method can also be called multiple times:
+<br>
+Example<h3>
+public class Main {<br>
+  static void myMethod() {<br>
+    System.out.println("I just got executed!");<br>
+  }<br>
+
+  public static void main(String[] args) {<br>
+    myMethod();<br>
+    myMethod();<br>
+    myMethod();<br>
+  }<br>
+}<br>
+
+// I just got executed!<br>
+// I just got executed!<br>
+// I just got executed!<br>
+ 
+ <h3>
+In the next chapter, Method Parameters, you will learn how to pass data (parameters) into a method.</h3>
+
+<div class = "button">
+<a href="java 16.html" class="previous">&laquo; Previous</a>
+<a href="java 18.html" class="next">Next &raquo;</a>
+</div>
+
+</body>
+</html>

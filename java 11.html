@@ -1,0 +1,107 @@
+<html>
+<head>
+ <link rel="stylesheet" href="stylesheets.css">
+<title> java switch</title>
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ 
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+     <a href ="C++Quiz.html">C++ Quiz</a>
+     <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h2>Java Switch Statements</h2><hr></hr>
+<p>
+Use the switch statement to select one of many code blocks to be executed.<br
+Syntax</br>
+swtch(expression) {<br>
+  case x:<br>
+    // code block<br>
+    break;<br>
+  case y:<br>
+    // code block<br>
+    break;<br>
+  default:<br>
+    // code block<br>
+}<br>
+This is how it works:</br>
+
+The switch expression is evaluated once.<br>
+The value of the expression is compared with the values of each case.<br>
+If there is a match, the associated block of code is executed.<br>
+The break and default keywords are optional, and will be described later in this chapter<br>
+The example below uses the weekday number to calculate the weekday name:<br>
+Example<br>
+
+int day = 4;<br>
+switch (day) {<br>
+  case 1:</br
+    System.out.println("Monday");<br>
+    break;<br>
+  case 2:<br
+    System.out.println("Tuesday");<br>
+    break;<br>
+   case:</br>
+    System.out.println("Wednesday");<br>
+    break;<br>
+  case 4:</br
+    System.out.println("Thursday");<br>
+    break;<br>
+   case 5</br>
+    System.out.println("Friday");<br>
+    break;<br>
+  case 6:</br>
+    System.out.println("Saturday");<br>
+    break;<br>
+  case 7:</br>
+    System.out.println("Sunday");<br>
+    break;<br>
+}<br>
+// Outputs "Thursday" (day 4)<br>
+</p>
+<h2>
+The break Keyword</h2><p>
+When Java reaches a break keyword, it breaks out of the switch block.<br>
+
+This will stop the execution of more code and case testing inside the block.<br>
+
+When a match is found, and the job is done, it's time for a break. There is no need for more testing.<br>
+
+A break can save a lot of execution time because it "ignores" the execution of all the rest of the code in the switch block.
+
+</p><h2>
+The default Keyword</h2><hr></hr>  <p>
+The default keyword specifies some code to run if there is no case match:
+<br>
+Example
+</br>
+int day = 4;<br>
+switch (day) {<br>
+   case </br>s
+    System.out.println("Today is Saturday");<br>
+    break;<br>
+  case 7:</br>
+    System.out.println("Today is Sunday");<br>
+    break;<br>
+  default:<br>
+    System.out.println("Looking  forward to the Weekend");<br>
+}<br>
+// Outputs "Looking forward to the Weekend"<br>
+ 
+Note that if the default statement is used as the last statement in a switch block, it does not need a break.
+<br>
+</>
+<div class = "button">
+<a href="java 10.html" class="previous">&laquo; Previous</a>
+<a href="java 12.html" class="next">Next &raquo;</a>
+</div>
+
+</body>
+</html>

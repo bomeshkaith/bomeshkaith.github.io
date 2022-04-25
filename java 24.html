@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>
+java class attribute </title>
+<link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+   <a href ="C++Quiz.html">C++ Quiz</a>
+   <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h1>
+Java Class Attributes</h1>
+<p>
+In the previous chapter, we used the term "variable" for x in the example (as shown below). It is actually an attribute of the class. Or you could say that class attributes are variables within a class:
+</p>
+<h3>Example
+</h3>
+<p>Create a class called "Main" with two attributes: x and y:<br>
+public class Main {<br>
+  int x = 5;<br>
+  int y = 3;<br>
+}<br> <h3>
+Another term for class attributes is fields.
+</h3>
+<h1>
+Accessing Attributes
+</h1>
+<p>You can access attributes by creating an object of the class, and by using the dot syntax (.):
+<br>
+The following example will create an object of the Main class, with the name myObj. We use the x attribute on the object to print its value:
+</p>
+<h3>Example</h3>
+Create an object called "myObj" and print the value of x:<br>
+public class Main {<br>
+  int x = 5;<br>
+  public static void main(String[] args) {<br>
+    Main myObj = new Main();<br>
+    System.out.println(myObj.x);<br>
+  }<br>
+}<br>
+ 
+ <h3>Modify Attributes</h3>
+<p>
+You can also modify attribute values:
+</p>
+<h3>
+Example </h3>
+Set the value of x to 40:<br>
+public class Main {<br>
+  int x;<br>
+  public static void main(String[] args) {<br>
+    Main myObj = new Main();<br>
+    myObj.x = 40;<br>
+    System.out.println(myObj.x);<br>
+  }<br>
+}<br>
+ 
+<h1>Or override existing values:
+</h1>
+<h3>
+Example </h3>
+Change the value of x to 25:<br>
+public class Main {<br>
+  int x = 10;<br>
+  public static void main(String[] args) {<br>
+    Main myObj = new Main();<br>
+    myObj.x = 25; // x is now 25<br>
+    System.out.println(myObj.x);<br>
+  }<br>
+}<br>
+ <h3>If you don't want the ability to override existing values, declare the attribute as final:
+<br>
+Example</h3>
+public class Main {<br>
+  final int x = 10;<br>
+  public static void main(String[] args) {<br>
+    Main myObj = new Main();<br>
+    myObj.x = 25; // will generate an error: cannot assign a value to a final variable<br>
+    System.out.println(myObj.x);<br>
+  }<br>
+}<br>
+ 
+
+<p>The final keyword is useful when you want a variable to always store the same value, like PI (3.14159...).
+
+<br>
+The final keyword is called a "modifier". You will learn more about these in the Java Modifiers Chapter.
+
+</p>
+
+<h1>Multiple Objects</h1>
+<p>
+If you create multiple objects of one class, you can change the attribute values in one object, without affecting the attribute values in the other:
+</p>
+<h3>
+Example</h3>
+<p>
+Change the value of x to 25 in myObj2, and leave x in myObj1 unchanged:
+<br>
+public class Main {<br>
+  int x = 5;<br>
+  public static void main(String[] args) {<br>
+    Main myObj1 = new Main();  // Object 1<br>
+    Main myObj2 = new Main();  // Object 2<br>
+    myObj2.x = 25;<br>
+    System.out.println(myObj1.x);  // Outputs 5<br>
+    System.out.println(myObj2.x);  // Outputs 25<br>
+  }<br>
+}<br>
+
+<h1>Multiple Attributes
+</h1>
+<p>
+You can specify as many attributes as you want:
+</p>
+<h3>
+Example</h3>
+public class Main {<br>
+  String fname = "John";<br>
+  String lname = "Doe";<br>
+  int age = 24;<br>
+  public static void main(String[] args) {<br>
+    Main myObj = new Main();<br>
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);<br>
+    System.out.println("Age: " + myObj.age);<br>
+  }<br>
+}<br>
+
+<h3>The next chapter will teach you how to create class methods and how to access them with objects.
+</h3>
+<div class = "button">
+<a href="java 23.html" class="previous">&laquo; Previous</a>
+<a href="java 25.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>

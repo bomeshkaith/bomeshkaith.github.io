@@ -1,0 +1,70 @@
+<html>
+<head> <link rel="stylesheet" href="stylesheets.css">
+<title> java Type casting</title></head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ 
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+   <a href ="C++Quiz.html">C++ Quiz</a>
+   <a href ="javaQuiz.html">java Quiz</a>
+</div>
+
+<h2>java Type casting</h2> <hr></hr>
+<p>
+Type casting is when you assign a value of one primitive data type to another type.<br>
+
+In Java, there are two types of casting:</p>
+<p>
+<ul>
+<li>
+
+Widening Casting (automatically) - converting a smaller type to a larger type size
+byte -> short -> char -> int -> long -> float -> double.</li>
+<li>
+
+Narrowing Casting (manually) - converting a larger type to a smaller size type
+double -> float -> long -> int -> char -> short -> byte.</li>
+</p>
+<h2>Widening Casting</h2><hr></hr>
+<p>
+
+Widening casting is done automatically when passing a smaller size type to a larger size type:
+</ul>
+</p>
+<p>
+Example<br>
+public class Main {<br>
+  public static void main(String[] args) {<br>
+    int myInt = 9;<br>
+    double myDouble = myInt; // Automatic casting: int to double<br>
+    System.out.println(myInt);      // Outputs 9<br>
+    System.out.println(myDouble);   // Outputs 9.0<br>
+  }<br>
+}
+</p>
+<h2>Narrowing Casting</h2><hr></hr>
+<p>
+Narrowing casting must be done manually by placing the type in parentheses in front of the value:
+Example</br>
+public class Main {<br>
+  public static void main(String[] args) {<br>
+    double myDouble = 9.78d;<br>
+    int myInt = (int) myDouble; // Manual casting: double to int<br>
+    System.out.println(myDouble);   // Outputs 9.78<br>
+    System.out.println(myInt);      // Outputs 9<br>
+  }<br>
+}
+<p>
+<div class = "button">
+<a href="java 4.html" class="previous">&laquo; Previous</a>
+<a href="java 6.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>

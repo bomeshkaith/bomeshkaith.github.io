@@ -1,0 +1,89 @@
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets.css">
+<title>Java Polymorphism</title>
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+   <a href ="C++Quiz.html">C++ Quiz</a>
+   <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h1> Java polymorphism</h1>
+<p>
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+<br>
+Like we specified in the previous chapter; Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+<br>
+For example, think of a superclass called Animal that has a method called animalSound(). Subclasses of Animals could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.):
+</p>
+<h3>Example</h3>
+class Animal {<br>
+  public void animalSound() {<br>
+    System.out.println("The animal makes a sound");<br>
+  }<br>
+}<br>
+class Pig extends Animal {<br>
+  public void animalSound() {<br>
+    System.out.println("The pig says: wee wee");<br>
+  }<br>
+}<br>
+class Dog extends Animal {<br>
+  public void animalSound() {<br>
+    System.out.println("The dog says: bow wow");<br>
+  }<br>
+}<br>
+<h3>Remember from the Inheritance chapter that we use the extends keyword to inherit from a class.
+</h3>
+<p>
+Now we can create Pig and Dog objects and call the animalSound() method on both of them:
+</p>
+<h3>
+Example</h3>
+class Animal{<br>
+  public void animalSound() {<br>
+    System.out.println("The animal makes a sound");<br>
+  }<br>
+}<br>
+
+class Pig extends Animal {<br>
+  public void animalSound() {<br>
+    System.out.println("The pig says: wee wee");<br>
+  }<br>
+}<br>
+
+class Dog extends Animal {<br>
+  public void animalSound() {<br>
+    System.out.println("The dog says: bow wow");<br>
+  }<br>
+}<br>
+
+class Main {<br>
+  public static void main(String[] args) {<br>
+    Animal myAnimal = new Animal();  // Create a Animal object<br>
+    Animal myPig = new Pig();  // Create a Pig object<br>
+    Animal myDog = new Dog();  // Create a Dog object<br>
+    myAnimal.animalSound();<br>
+    myPig.animalSound();<br>
+    myDog.animalSound();<br>
+  }<br>
+}<br>
+
+<h3>Why And When To Use "Inheritance" and "Polymorphism"?
+</h3>
+<p>- It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
+</p>
+<div class = "button">
+<a href="java 28.html" class="previous">&laquo; Previous</a>
+<a href="java 30.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>
+

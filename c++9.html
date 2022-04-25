@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>C++ Program</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+<style>
+.input{
+  padding:0px;
+ 
+}
+h3{
+  padding:0px;
+}
+</style>
+</head>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+<body>
+<div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+    <a href ="C++Quiz.html">C++ Quiz</a>
+    <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h2>C++ Arrays</h2><hr></hr>
+<p>
+C++ Arrays
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+<br></br>
+To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store:
+<br></br>
+string cars[4]; <br></br>
+We have now declared a variable that holds an array of four strings. To insert values to it, we can use an array literal - place the values in a comma-separated list, inside curly braces:
+<br></br>
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+<br></br>
+</p>
+<h2>  Access the Elements of an Array</h2><hr></hr>
+<p>
+You access an array element by referring to the index number inside square brackets [].
+<br></br>
+This statement accesses the value of the first element in cars:
+<br></br>
+Example<br></br>
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"}; <br></br>
+cout << cars[0]; <br></br>
+// Outputs Volvo<br></br>
+</p>
+<h2> Change an Array Element</h2><hr></hr>
+<p>
+To change the value of a specific element, refer to the index number:<br></br>
+cars[0] = "Opel";<br></br>
+Example<br></br>
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"}; <br></br>
+cars[0] = "Opel";<br></br>
+cout << cars[0];<br></br>
+// Now outputs Opel instead of Volvo <br></br>
+</p>
+<h2>C++ Arrays and Loops</h2><hr></hr>
+<h2>Loop Through an Array</h2><hr></hr>
+<p>
+You can loop through the array elements with the for loop.
+<br></br>
+The following example outputs all elements in the cars array: <br></br>
+Example<br></br>
+string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"}; <br></br>
+for (int i = 0; i < 4; i++) { <br></br>
+  cout << cars[i] << "\n"; <br></br>
+ // output: Volvo , BMW , Ford, Mazda <br></br>
+} <br></br>
+</p>
+<div class = "button">
+<a href="c++8.html" class="previous">&laquo; Previous</a>
+<a href="c++10.html" class="next">Next &raquo;</a>
+</div>
+</body>
+
+</html>

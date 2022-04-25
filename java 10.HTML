@@ -1,0 +1,136 @@
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets.css">
+<title> if else</title>
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ 
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+   <a href ="C++Quiz.html">C++ Quiz</a>
+   <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h2>
+Java Conditions and If Statements</h2><hr></hr>
+<p>
+Java supports the usual logical conditions from mathematics:
+</br>
+<Less than: a < b</br>
+Less than or equal to: a <= b</br>
+Greater than: a > b</br>
+Greater than or equal to: a >= b</br>
+Equal to a == b</br>
+Not Equal to: a != b</br>
+
+You can use these conditions to perform different actions for different decisions.<br>
+
+Java has the following conditional statements:<br>
+
+Use if to specify a block of code to be executed, if a specified condition is true</br>
+Use else to specify a block of code to be executed, if the same condition is false</br>
+Use else if to specify a new condition to test, if the first condition is false</br>
+Use switch to specify many alternative blocks of code to be executed</br>
+</p>
+<h2>The if Statement</h2><hr></hr>
+<p>Use the if statement to specify a block of Java code to be executed if a condition is true.
+<br>
+Syntax</br>
+
+if (condition) {<br>
+  // block of code to be executed if the condition is true<br>
+}<br>
+Note that if is in lowercase letters. Uppercase letters (If or IF) will generate an error.
+</br>
+In the example below, we test two values to find out if 20 is greater than 18. If the condition is true, print some text:
+
+Example</br>
+if (20 > 18) {<br>
+  System.out.println("20 is greater than 18");<br>
+}
+<br>
+We can also test variables:
+<br>
+Example<br>
+int x = 20;<br>
+int y = 18;<br>
+if (x > y) {<br>
+  System.out.println("x is greater than y");<br>
+}
+<br>
+Example explained</br>
+In the example above we use two variables, x and y, to test whether x is greater than y (using the > operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that "x is greater than y".
+
+</p>
+<h2>
+
+The else Statement</h2><hr></hr>
+<p>
+Use the else statement to specify a block of code to be executed if the condition is false.<br>
+Syntax</br>
+if (condition) {<br>
+  // block of code to be executed if the condition is true<br>
+} else {<br>
+  // block of code to be executed if the condition is false<br>
+}<br>
+Example</br>
+int time = 20;<br>
+if (time < 18) {<br>
+  System.out.println("Good day.");<br>
+} else {<br>
+  System.out.println("Good evening.");<br>
+}<br>
+// Outputs "Good evening."<br>
+ 
+
+Example explained</br>
+In the example above, time (20) is greater than 18, so the condition is false. Because of this, we move on to the else condition and print to the screen "Good evening". If the time was less than 18, the program would print "Good day".
+</p>
+<h2>
+The else if Statement
+
+</h2><hr></hr>
+<p>
+Use the else if statement to specify a new condition if the first condition is false.
+</br>
+Syntax
+</br>
+if (condition1) {<br>
+  // block of code to be executed if condition1 is true<br>
+} else if (condition2) {<br>
+  // block of code to be executed if the condition1 is false and condition2 is true<br>
+} else {<br>
+  // block of code to be executed if the condition1 is false and condition2 is false<br>
+}
+<br>
+Example,<br>
+int time = 22;<br>
+if (time < 10) {<br>
+  System.out.println("Good morning.");<br>
+} else if (time < 20) {<br>
+  System.out.println("Good day.");<br>
+} else {<br>
+  System.out.println("Good evening.");<br>
+}<br>
+// Outputs "Good evening."<br>
+
+Example explained
+<br>
+In the example above, time (22) is greater than 10, so the first condition is false. The next condition, in the else if statement, is also false, so we move on to the else condition since condition1 and condition2 is both false - and print to the screen "Good evening".
+<br>
+However, if the time was 14, our program would print "Good day."
+</p>
+
+<div class = "button">
+<a href="java 9.html" class="previous">&laquo; Previous</a>
+<a href="java 11.html" class="next">Next &raquo;</a>
+</div>
+
+</body>
+</html>

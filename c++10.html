@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>C++ Program</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+<style>
+.input{
+  padding:0px;
+ 
+}
+h3{
+  padding:0px;
+}
+</style>
+</head>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+<body>
+<div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+  <a href ="C++Quiz.html">C++ Quiz</a>
+  <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h2>C++ Structures (struct)</h2><hr></hr>
+<h2>C++ Structures</h2><hr></hr>
+<p>
+Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is known as a member of the structure.
+<br></br>
+Unlike an array, a structure can contain many different data types (int, string, bool, etc.).
+<br></br>
+</p>
+<h2>Create a Structure</h2><hr></hr>
+<p>
+To create a structure, use the struct keyword and declare each of its members inside curly braces.
+<br></br>
+After the declaration, specify the name of the structure variable (myStructure in the example below):
+<br></br>
+struct {             // Structure declaration <br></br>
+  int myNum;         // Member (int variable)<br></br>
+  string myString;   // Member (string variable)<br></br>
+} myStructure;       // Structure variable<br></br>
+</p>
+<h2>Access Structure Members</h2><hr></hr>
+<p>
+To access members of a structure, use the dot syntax (.): <br></br>
+
+Example<br></br>
+Assign data to members of a structure and print it: <br></br>
+
+// Create a structure variable called myStructure<br></br>
+struct {<br></br>
+  int myNum;<br></br>
+  string myString;<br></br>
+} myStructure;<br></br>
+
+// Assign values to members of myStructure <br></br>
+myStructure.myNum = 1;<br></br>
+myStructure.myString = "Hello World!";<br></br>
+
+// Print members of myStructure <br></br>
+cout << myStructure.myNum << "\n"; <br></br>
+cout << myStructure.myString << "\n";<br></br>
+</p>
+<h2>One Structure in Multiple Variables</h2><hr></hr>
+<p>
+You can use a comma (,) to use one structure in many variables: <br></br>
+
+struct {<br></br>
+  int myNum;<br></br>
+  string myString;<br></br>
+} myStruct1, myStruct2, myStruct3; // Multiple structure variables separated <br></br>with commas
+This example shows how to use a structure in two different variables:<br></br>
+
+Example<br></br>
+Use one structure to represent two cars:
+<br></br>
+struct {
+  string brand; <br></br>
+  string model;<br></br>
+  int year;<br></br>
+} myCar1, myCar2; // We can add variables by separating them with a comma here
+<br></br>
+// Put data into the first structure<br></br>
+myCar1.brand = "BMW";<br></br>
+myCar1.model = "X5";<br></br>
+myCar1.year = 1999;<br></br>
+
+// Put data into the second structure<br></br>
+myCar2.brand = "Ford";<br></br>
+myCar2.model = "Mustang";<br></br>
+myCar2.year = 1969;<br></br>
+// Print the structure members <br></br>
+cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
+<br></br>
+cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
+<br></br>
+</p>
+<h2>Named Structures</h2><hr></hr>
+<p>
+By giving a name to the structure, you can treat it as a data type. This means that you can create variables with this structure anywhere in the program at any time.
+<br></br>
+To create a named structure, put the name of the structure right after the struct keyword:
+<br></br>
+struct myDataType { // This structure is named "myDataType" <br></br>
+  int myNum;<br></br>
+  string myString;<br></br>
+};<br></br>
+To declare a variable that uses the structure, use the name of the structure as the data type of the variable:
+<br></br>
+myDataType myVar;<br></br>
+Example<br></br>
+Use one structure to represent two cars:
+<br></br>
+// Declare a structure named "car"<br></br>
+struct car {<br></br>
+  string brand;<br></br>
+  string model; <br></br>
+  int year;<br></br>
+};<br></br>
+int main() {<br></br>
+  // Create a car structure and store it in myCar1;
+ 
+<br></br> car myCar1;
+<br></br>
+  myCar1.brand = "BMW";<br></br>
+  myCar1.model = "X5";<br></br>
+  myCar1.year = 1999;<br></br>
+
+  // Create another car structure and store it in myCar2;<br></br>
+  car myCar2;<br></br>
+  myCar2.brand = "Ford";<br></br>
+  myCar2.model = "Mustang";<br></br>
+  myCar2.year = 1969;<br></br>
+ 
+  // Print the structure members <br></br>
+  cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
+<br></br> 
+ cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
+ <br></br>
+  return 0;<br></br>
+}<br></br>
+</p>
+<div class = "button">
+<a href="c++9.html" class="previous">&laquo; Previous</a>
+<a href="c++11.html" class="next">Next &raquo;</a>
+</div>
+</body>
+
+</html>

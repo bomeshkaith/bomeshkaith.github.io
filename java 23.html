@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Java Classes/Objects</title>
+<link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+   <a href ="C++Quiz.html">C++ Quiz</a>
+   <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h1>Java is an object-oriented programming language.
+</h1>
+<p>
+Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.
+<br>
+A Class is like an object constructor, or a "blueprint" for creating objects.
+</p>
+<h1>
+Create a Class
+</h1>
+<p>To create a class, use the keyword class:
+<br>
+Main.java<br>
+Create a class named "Main" with a variable x:<br>
+public class Main {<br>
+  int x = 5;<br>
+}<h3>
+Remember from the Java Syntax chapter that a class should always start with an uppercase first letter, and that the name of the java file should match the class name.
+</h3>
+<h1>
+Create an Object</h1>
+<p>
+In Java, an object is created from a class. We have already created the class named Main, so now we can use this to create objects.
+<br>
+To create an object of Main, specify the class name, followed by the object name, and use the keyword new:
+<br><h3>
+Example</h3>
+<p>
+Create an object called "myObj" and print the value of x:<br>
+public class Main {<br>
+  int x = 5;<br>
+
+  public static void main(String[] args) {<br>
+    Main myObj = new Main();<br>
+    System.out.println(myObj.x);<br>
+  }<br>
+}<br>
+<h1>Multiple Objects
+</h1>
+<p>You can create multiple objects of one class:
+</p>
+<h3>
+Example</h3>
+<p>
+Create two objects of Main:
+<br>
+public class Main {
+<br>  int x = 5;
+  public static void main(String[] args) {<br>
+    Main myObj1 = new Main();  // Object 1<br>
+    Main myObj2 = new Main();  // Object 2<br>
+    System.out.println(myObj1.x);<br>
+    System.out.println(myObj2.x);<br>
+
+  }<br>
+}<br>
+ 
+ <h1>Using Multiple Classes</h1>
+<p>
+You can also create an object of a class and access it in another class. This is often used for better organization of classes (one class has all the attributes and methods, while the other class holds the main() method (code to be executed)).
+<br>
+Remember that the name of the java file should match the class name. In this example, we have created two files in the same directory/folder:
+</P>
+Main.java<br>
+Second.java<br>
+Main.java<br>
+public class Main {<br>
+  int x = 5;<br>
+}<br>
+<h1>
+Second.java</h1>
+class Second {<br>
+  public static void main(String[] args) {<br>
+    Main myObj = new Main();<br>
+    System.out.println(myObj.x);<br>
+  }<br>
+}<br>
+<h3>When both files have been compiled:
+</h3>
+C:\Users\Your Name>javac Main.java<br>
+C:\Users\Your Name>javac Second.java
+<h4>Run the Second.java file:</h4>
+<br>C:\Users\Your Name>java Second
+<h4>And the output will be:
+</h4>    
+5<br>
+<h3>
+You will learn much more about classes and objects in the next chapters.
+</h3>
+<div class = "button">
+<a href="java 22.html" class="previous">&laquo; Previous</a>
+<a href="java 24.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>

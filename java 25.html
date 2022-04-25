@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>
+Java Class Methods</title>
+<link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+   <a href ="C++Quiz.html">C++ Quiz</a>
+   <a href ="javaQuiz.html">java Quiz</a>
+</div>
+
+<h1>
+Java Class Methods</h1>
+<p>
+You learned from the Java Methods chapter that methods are declared within a class, and that they are used to perform certain actions:
+</p>
+<h3>
+Example</h3>
+Create a method named myMethod() in Main:<br>
+public class Main {<br>
+  static void myMethod() {<br>
+    System.out.println("Hello World!");<br>
+  }<br>
+}<h3>
+ 
+myMethod() prints a text (the action), when it is called. To call a method, write the method's name followed by two parentheses () and a semicolon;
+<br>
+Example</h3>
+Inside main, call myMethod():<br>
+public class Main {<br>
+  static void myMethod() {<br>
+    System.out.println("Hello World!");<br>
+  }<br>
+  public static void main(String[] args) {<br>
+    myMethod();<br>
+  }<br>
+}<br>
+
+// Outputs "Hello World!"<br>
+ <h1>
+Static vs. Non-Static</h1>
+<p>You will often see Java programs that have either static or public attributes and methods.
+<br>
+In the example above, we created a static method, which means that it can be accessed without creating an object of the class, unlike public, which can only be accessed by objects:
+</p>
+<h3>
+Example</h3>
+<p>
+An example to demonstrate the differences between static and public methods:
+</p>
+public class Main {<br>
+  // Static method<br>
+  static void myStaticMethod() {<br>
+    System.out.println("Static methods can be called without creating objects");<br>
+  }<br>
+  // Public method<br>
+  public void myPublic Method() {<br>
+    System.out.println("Public methods must be called by creating objects");<br>
+  }<br>
+
+  // Main method<br>
+  public static void main(String[] args) {<br>
+    myStaticMethod(); // Call the static method<br>
+    // myPublicMethod(); This would compile an error<br>
+
+    Main myObj = new Main(); // Create an object of Main<br>
+    myObj.myPublicMethod(); // Call the public method on the object<br>
+  }<br>
+}<br>
+ 
+<h3>Note: You will learn more about these keywords (called modifiers) in the Java Modifiers chapter.
+</h3>
+<h1>
+Access Methods With an Object
+</h1>
+<h3>Example</h3>
+<p>
+Create a Car object named myCar. Call the fullThrottle() and speed() methods on the myCar object, and run the program:
+</p>
+// Create a Main class<br>
+public class Main {<br>
+  // Create a fullThrottle() method<br>
+  public void fullThrottle() {<br>
+    System.out.println("The car is going as fast as it can!");<br>
+  }<br>
+
+  // Create a speed() method and add a parameter<br>
+  public void speed(int maxSpeed) {<br>
+    System.out.println("Max speed is: " + maxSpeed);<br>
+  }<br>
+
+  // Inside main, call the methods on the myCar object<br>
+  public static void main(String[] args) {<br>
+    Main myCar = new Main();   // Create a myCar object<br>
+    myCar.fullThrottle();      // Call the fullThrottle() method<br>
+    myCar.speed(200);          // Call the speed() method<br>
+  }<br>
+}<br>
+
+// The car is going as fast as it can!<br>
+// Max speed is: 200<br>
+
+<h3>Example explained</h3>
+<p>1) We created a custom Main class with the class keyword.
+<br>
+2) We created the fullThrottle() and speed() methods in the Main class.
+<br>
+3) The fullThrottle() method and the speed() method will print out some text, when they are called.
+<br>
+4) The speed() method accepts an int parameter called maxSpeed - we will use this in 8).
+<br>
+5) In order to use the Main class and its methods, we need to create an object of the Main Class.
+<br>
+6) Then, go to the main() method, which you know by now is a built-in Java method that runs your program (any code inside main is executed).
+<br>
+7) By using the new keyword we created an object with the name myCar.
+<br>
+8) Then, we call the fullThrottle() and speed() methods on the myCar object, and run the program using the name of the object (myCar), followed by a dot (.), followed by the name of the method (fullThrottle(); and speed(200);). Notice that we add an int parameter of 200 inside the speed() method.
+<br>
+<p>Remember that..<br>
+The dot (.) is used to access the object's attributes and methods.<br>
+
+To call a method in Java, write the method name followed by a set of parentheses (), followed by a semicolon (;).
+<br>
+A class must have a matching filename (Main and Main.java).
+<br>
+<h1>
+Using Multiple Classes
+</h1>
+<p>Like we specified in the Classes chapter, it is a good practice to create an object of a class and access it in another class.
+<br>
+Remember that the name of the java file should match the class name. In this example, we have created two files in the same directory:
+<br>
+<ul>
+<li>
+Main.java</li>
+<li>
+Second.java</li>
+<li>
+Main.java</li>
+public class Main {<br>
+  public void fullThrottle() {<br>
+    System.out.println("The car is going as fast as it can!");<br>
+  }<br>
+
+  public void speed(int maxSpeed) {
+<br>
+ System.out.println("Max speed is: " + maxSpeed);<br>
+  }<br>
+}<br>
+Second.java
+class Second {<br>
+  public static void main(String[] args) {<br>
+    Main myCar = new Main();     // Create a myCar object<br>
+    myCar.fullThrottle();      // Call the fullThrottle() method<br>
+    myCar.speed(200);          // Call the speed() method<br>
+  }<br>
+}<br>
+<h3>When both files have been compiled:
+</h3>
+<h3>
+C:\Users\Your Name>j avac Main.java<br>
+C:\Users\Your Name>javac Second.java<br>
+Run the Second.java file:</h3>
+
+C:\Users\Your Name>java Second
+And the output will be:
+
+The car is going as fast as it can!
+Max speed is: 200
+<div class = "button">
+<a href="java 24.html" class="previous">&laquo; Previous</a>
+<a href="java 27.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>

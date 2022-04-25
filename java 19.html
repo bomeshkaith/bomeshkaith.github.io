@@ -1,0 +1,77 @@
+<html>
+<head>
+<title> java method overloading</title>
+<link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+   <a href ="C++Quiz.html">C++ Quiz</a>
+   <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h3>
+Method Overloading
+</h3>
+<p>
+With method overloading, multiple methods can have the same name with different parameters:
+</p>
+<h3>
+Example</h3>
+int myMethod(int x)<br>
+float myMethod(float x)<br>
+double myMethod(double x, double y)<br>
+Consider the following example, which has two methods that add numbers of different type:<br>
+<h3>
+Example</h3>
+static int plusMethodInt(in t x, int y) {
+<br>  return x + y;<br>
+}<br>
+
+static double plusMethodDouble(double x, double y) {<br>
+  return x + y;<br>
+}<br>
+
+public static void main(String[] args) {<br>
+  int myNum1 = plusMethodInt(8, 5);<br>
+  double myNum2 = plusMethodDouble(4.3, 6.26);<br>
+  System.out.println("int: " + myNum1);<br>
+  System.out.println("double: " + myNum2);<br>
+}<br>
+<p>
+
+Instead of defining two methods that should do the same thing, it is better to overload one.
+<br>
+In the example below, we overload the plusMethod method to work for both int and double:
+</p>
+<h3>
+Example</h3>
+static int plusMethod(int x, int y) {<br>
+  return x + y;,br>
+}<br>
+
+static double plusMethod(double x, double y) {<br>
+  return x + y;<br>
+}<br>
+
+public static void main(String[] args) {<br>
+  int myNum1 = plusMethod(8, 5);<br>
+  double myNum2 = plusMethod(4.3, 6.26);<br>
+  System.out.println("int: " + myNum1);<br>
+  System.out.println("double: " + myNum2);<br>
+}<br> 
+ 
+<h3>Note: Multiple methods can have the same name as long as the number and/or type of parameters are different.
+</h3>
+<div class = "button">
+<a href="java 18.html" class="previous">&laquo; Previous</a>
+<a href="java 20.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>

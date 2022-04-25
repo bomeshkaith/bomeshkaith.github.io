@@ -1,0 +1,82 @@
+ <html>
+<head><title>
+java scope</title>
+<link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+     <a href ="C++Quiz.html">C++ Quiz</a>
+     <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h1>
+Java Scope
+
+</h1>
+<p>In Java, variables are only accessible inside the region they are created. This is called scope.
+</p>
+<h1>
+Method Scope
+
+</h1>
+<p>Variables declared directly inside a method are available anywhere in the method following the line of code in which they were declared:
+</p>
+<h3>
+Example
+
+</h3>
+public class Main {<br>
+  public static void main(String[] args) {<br>
+
+    // Code here CANNOT use x<br>
+
+    int x = 100;<br>
+
+    // Code here can use x<br>
+   System.out.println(x);<br>
+  }<br>
+}<br>
+<h1>
+Block Scope</h1>
+<p>
+A block of code refers to all of the code between curly braces {}.
+<br>
+Variables declared inside blocks of code are only accessible by the code between the curly braces, which follows the line in which the variable was declared:
+</p><h3>
+Example</h3>
+public class Main {<br>
+  public static void main(String[] args) {<br>
+
+    // Code here CANNOT use x<br>
+    { // This is a block<br>
+
+      // Code here CANNOT use x<br>
+
+      int x = 100;<br>
+
+      // Code here CAN use x<br>
+      System.out.println(x);<br>
+
+   }
+ // The block ends here<br>
+
+  // Code here CANNOT use x<br>
+
+  }<br>
+}
+
+<h3>A block of code may exist on its own or it can belong to an if, while or for statement. In the case of for statements, variables declared in the statement itself are also available inside the block's scope.
+</h3>
+<div class = "button">
+<a href="java 19.html" class="previous">&laquo; Previous</a>
+<a href="java 21.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>C++ Program</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+<style>
+
+</style>
+</head>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+<div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+    <a href ="C++Quiz.html">C++ Quiz</a>
+    <a href ="javaQuiz.html">java Quiz</a>
+</div></div>
+<body>
+<h2>C++ Strings</h2><hr></hr>
+<p class="input">
+A string variable contains a collection of characters surrounded by double quotes:
+<br></br>
+Example <br></br>
+Create a variable of type string and assign it a value: <br></br>
+
+string greeting = "Hello";<br></br>
+To use strings, you must include an additional header file in the source code, the <string> library:
+<br></br>
+Example<br></br>
+// Include the string library <br></br>
+#include <string> <br></br>
+ 
+// Create a string variable <br></br>
+string greeting = "Hello"; <br></br>
+</p>
+
+<h2>C++ String Concatenation</h2><hr></hr>
+<p>
+The + operator can be used between strings to add them together to make a new string. This is called concatenation:
+<br></br>
+Example<br></br>
+string firstName = "John ";<br></br>
+string lastName = "Doe";<br></br>
+string fullName = firstName + lastName;<br></br>
+cout << fullName;<br></br>
+output : "JohnDoe"<br></br>
+In the example above, we added a space after firstName to create a space between John and Doe on output. However, you could also add a space with quotes (" " or ' '):
+<br></br>
+Example<br></br>
+string firstName = "John";<br></br>
+string lastName = "Doe";<br></br>
+string fullName = firstName + " " + lastName;<br></br>
+cout << fullName;<br></br>
+output : "Jone Doe";<br></br>
+</p>
+<h2>Append</h2><hr></hr>
+<p>
+A string in C++ is actually an object, which contain functions that can perform certain operations on strings. For example, you can also concatenate strings with the append() function:
+<br></br>
+Example<br></br>
+string firstName = "John ";<br></br>
+string lastName = "Doe";<br></br>
+string fullName = firstName.append(lastName);<br></br>
+cout << fullName;<br></br>
+output :"JohnDoe"<br></br>
+<h2>C++ String Length</h2><hr></hr>
+</p>
+<p>
+To get the length of a string, use the length() function:
+<br></br>
+Example<br></br>
+string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";<br></br>
+cout << "The length of the txt string is: " << txt.length();<br></br>
+output : The length of the txt string is: 26<br></br>
+</p>
+<h2>Access Strings</h2><hr></hr>
+<p>
+You can access the characters in a string by referring to its index number inside square brackets [].
+<br></br>
+This example prints the first character in myString:
+<br></br>
+Example<br></br>
+string myString = "Hello";<br></br>
+cout << myString[0];<br></br>
+// Outputs H<br></br>
+This example prints the second character in myString:<br></br>
+Example<br></br>
+string myString = "Hello";<br></br>
+cout << myString[1];<br></br>
+// Outputs e<br></br>
+</p>
+<h2>Change String Characters</h2><hr></hr>
+<p>
+To change the value of a specific character in a string, refer to the index number, and use single quotes:
+<br></br>
+Example<br></br>
+string myString = "Hello";<br></br>
+myString[0] = 'J';<br></br>
+cout << myString;<br></br>
+// Outputs Jello instead of Hello<br></br>
+<p>
+<h2>User Input Strings</h2><hr></hr>
+<p>
+It is possible to use the extraction operator >> on cin to display a string entered by a user:
+<br></br>
+Example<br></br>
+string firstName;<br></br>
+cout << "Type your first name: ";<br></br>
+cin >> firstName; // get user input from the keyboard<br></br>
+cout << "Your name is: " << firstName;<br></br>
+
+// Type your first name: John <br></br>
+// Your name is: John<br></br>
+</p>
+<div class = "button">
+<a href="c++4.html" class="previous">&laquo; Previous</a>
+<a href="c++7.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>

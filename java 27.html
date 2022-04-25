@@ -1,0 +1,105 @@
+<html>
+<head>
+<title> java Encapsulation</title>
+<link rel="stylesheet" href="stylesheets.css">
+</head>
+<body>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+ <div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+   <a href ="C++Quiz.html">C++ Quiz</a>
+   <a href ="javaQuiz.html">java Quiz</a>
+</div>
+<h1>Encapsulation</h1>
+<p>
+The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
+
+declare class variables/attributes as private<br>
+provide public get and set methods to access and update the value of a private variable
+</p>
+<h3>Get and Set</h3>
+<p>You learned from the previous chapter that private variables can only be accessed within the same class (an outside class has no access to it). However, it is possible to access them if we provide public get and set methods.
+<br>
+The get method returns the variable value, and the set method sets the value.
+<br>
+Syntax for both is that they start with either get or set, followed by the name of the variable, with the first letter in upper case:
+<h3>
+Example</h3>
+public class Person {<br>
+  private String name; // private = restricted access<br>
+
+  // Getter<br>
+  public String getName() {<br>
+    return name;<br>
+  }<br>
+
+  // Setter<br>
+  public void setName(String newName) {<br>
+    this.name = newName;<br>
+  }<br>
+}<br>
+ 
+ 
+<h3>Example explained
+</h3>
+<p>The get method returns the value of the variable name.
+
+<br>The set method takes a parameter (newName) and assigns it to the name variable. The this keyword is used to refer to the current object.
+
+<br>However, as the name variable is declared as private, we cannot access it from outside this class:
+
+<h3>Example</h3>
+public class Main {<br>
+  public static void main(String[] args) {<br>
+    Person myObj = new Person();<br>
+    myObj.name = "John";  // error<br>
+    System.out.println(myObj.name); // error<br> 
+  }<br>
+}<br>
+
+<p>If the variable was declared as public, we would expect the following output:
+
+John
+However, as we try to access a private variable, we get an error:</p>
+<br>
+
+MyClass.java:4: error: name has private access in Person
+<br>    myObj.name = "John";
+         ^
+<br>MyClass.java:5: error: name has private access in Person
+  <br>  System.out.println(myObj.name);
+                  ^
+<br>2 errors
+<br>Instead, we use the getName() and setName() methods to access and update the variable:
+<h3>
+Example</h3>
+public class Main {<br>
+  public static void main(String[] args) {<br>
+    Person myObj = new Person();<br>
+    myObj.setName("John"); // Set the value of the name variable to "John"<br>
+    System.out.println(myObj.getName());<br>
+  }<br>
+}<br>
+
+// Outputs "John"<br>
+ 
+ 
+<h1>
+Why Encapsulation?</h1>
+<p>
+Better control of class attributes and methods<br>
+Class attributes can be made read-only (if you only use the get method), or write-only (if you only use the set method)<br>
+Flexible: the programmer can change one part of the code without affecting other parts<br>
+Increased security of data<br>
+<div class = "button">
+<a href="java 25.html" class="previous">&laquo; Previous</a>
+<a href="java 28.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>

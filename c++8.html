@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>C++ Program</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+<style>
+</style>
+</head>
+<div class = "image">
+<h1>Outofbox 
+<img src="https://www.kindpng.com/picc/m/9-95123_think-outside-the-box-idea-flat-icon-vector.png" alt = "pht0t" style="width:5%" align ="left">
+ </h1> </div>
+<div class ="links">
+<a href ="outof.html">Home</a>
+<a href ="c++0.html">c++</a>
+<a href ="java 1.html">java</a>
+<a href ="https://WWW.onlinegdb.com/" target="_blank">compiler</a>
+  <a href ="C++Quiz.html">C++ Quiz</a>
+  <a href ="javaQuiz.html">java Quiz</a>
+</div></div>
+<body>
+<h2>C++ Loop</h2><hr></hr>
+<p>
+Loops can execute a block of code as long as a specified condition is reached.
+<br></br>
+Loops are handy because they save time, reduce errors, and they make code more readable.
+<br></br>
+</p>
+<h2>C++ While Loop</h2><hr></hr>
+<p>
+The while loop loops through a block of code as long as a specified condition is true:
+<br></br>
+Syntax<br></br>
+while (condition) { <br></br>
+  // code block to be executed <br></br>
+} <br></br>
+In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:
+<br></br>
+Example<br></br>
+int i = 0;<br></br>
+while (i < 5) {<br></br>
+  cout << i << "\n";<br></br>
+  i++;<br></br>
+}<br></br>
+</p>
+<h2>C++ Do/While Loop</h2><hr></hr>
+<p>
+The Do/While Loop<br></br>
+The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+<br></br>
+Syntax<br></br>
+do {<br></br>
+  // code block to be executed <br></br>
+}<br></br>
+while (condition);<br></br>
+The example below uses a do/while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:
+<br></br>
+Example<br></br>
+int i = 0;<br></br>
+do {<br></br>
+  cout << i << "\n";<br></br>
+  i++;<br></br>
+}<br></br>
+while (i < 5);<br></br>
+</p>
+<h2>C++ For Loop</h2><hr></hr>
+<p>
+C++ For Loop <br></br>
+When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+<br></br>
+Syntax<br></br>
+for (statement 1; statement 2; statement 3) { <br></br>
+  // code block to be executed<br></br>
+}<br></br>
+#Statement 1 is executed (one time) before the execution of the code block.
+<br></br>
+#Statement 2 defines the condition for executing the code block.
+<br></br>
+#Statement 3 is executed (every time) after the code block has been executed.
+<br></br>
+The example below will print the numbers 0 to 4:
+<br></br>
+Example<br></br>
+for (int i = 0; i < 5; i++) {<br></br>
+  cout << i << "\n";<br></br>
+}<br></br>
+Example explained <br></br>
+Statement 1 sets a variable before the loop starts (int i = 0).
+<br></br>
+Statement 2 defines the condition for the loop to run (i must be less than 5). If the condition is true, the loop will start over again, if it is false, the loop will end.
+<br></br>
+Statement 3 increases a value (i++) each time the code block in the loop has been executed.
+<br></br>
+</p>
+<h2>C++ Break and Continue</h2><hr></hr>
+<h2>C++ Break</h2><hr></hr>
+<p>
+You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch statement.
+<br></br>
+The break statement can also be used to jump out of a loop.
+<br></br>
+This example jumps out of the loop when i is equal to 4:
+<br></br>
+Example<br></br>
+for (int i = 0; i < 10; i++) {<br></br>
+  if (i == 4) {<br></br>
+    break;<br></br>
+  }<br></br>
+  cout << i << "\n";<br></br>
+}<br></br>
+</p>
+<h2>C++ Continue</h2><hr></hr>
+<p>
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+<br></br>
+This example skips the value of 4:
+<br></br>
+Example<br></br>
+for (int i = 0; i < 10; i++) { <br></br>
+  if (i == 4) {<br></br>
+    continue; <br></br>
+  }<br></br>
+  cout << i << "\n"; <br></br>
+}<br></br>
+//output:4;<br></br>
+</p> 
+<h2>Break and Continue in While Loop </h2><hr></hr>
+<p>
+You can also use break and continue in while loops: <br></br>
+
+Break Example<br></br>
+int i = 0;<br></br>
+while (i < 10) {<br></br>
+  cout << i << "\n";<br></br>
+  i++;<br></br>
+  if (i == 4) {<br></br>
+    break;<br></br>
+  }<br></br>
+}<br></br>
+</p>
+<div class = "button">
+<a href="c++7.html" class="previous">&laquo; Previous</a>
+<a href="c++9.html" class="next">Next &raquo;</a>
+</div>
+</body>
+</html>
